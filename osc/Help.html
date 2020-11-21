@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><link type="text/css" rel="stylesheet" href="resources/sheet.css" >
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .s0{background-color:#ffffff;text-align:left;font-weight:bold;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="1706099245C0" style="width:852px" class="column-headers-background">A</th></tr></thead><tbody><tr style='height:20px;'><th id="1706099245R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th><td class="s0" dir="ltr">Tips for using this template:</td></tr><tr style='height:20px;'><th id="1706099245R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th><td class="s1" dir="ltr">1. Raw data goes to the &quot;Data&quot; sheet. &quot;Timestamp&quot; is the time data is posted, &quot;Timepoint&quot; is the time data is sent from the device.</td></tr><tr style='height:20px;'><th id="1706099245R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">3</div></th><td class="s1" dir="ltr">2. Number format in the &quot;Timepoint&quot; column must be a decimal number for the chart to plot properly.</td></tr><tr style='height:20px;'><th id="1706099245R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">4</div></th><td class="s1" dir="ltr">3. &quot;Report&quot; sheet formats data newest to oldest and allows unit conversion from Farhenheit to Celsius and SG to Plato.</td></tr><tr style='height:20px;'><th id="1706099245R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">5</div></th><td class="s1" dir="ltr">4. &quot;Report&quot; sheet also allows viewing multiple time frames for higher level detail.</td></tr><tr style='height:20px;'><th id="1706099245R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">6</div></th><td class="s1" dir="ltr">5. Some cells have warnings on making changes, this is to prevent accidental edits that would make the sheet not work.</td></tr><tr style='height:20px;'><th id="1706099245R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px;">7</div></th><td class="s1" dir="ltr">6. Comments on sheet help explain why some of the calculations are there. Comments may be deleted if desired.</td></tr></tbody></table></div>
+<script type='text/javascript' nonce="gzZOAb0OOcabOZSo6hD2bQ">
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r && r != sheetElement) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c && c != sheetElement) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+};
+posObjs();</script>
